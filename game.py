@@ -34,12 +34,9 @@ def play_game():
     while player not in options():
         player = input('rock, paper or scissors?: (r,p, s): ').lower()
 
-
-
-
     def show_results():
-        print(f'Computer {options().get(computer)}')
-        print(f'Player {options().get(player)}')
+        print(f'Computer choose {options().get(computer).capitalize()}')
+        print(f'Player choose {options().get(player).capitalize()}')
 
     if player == computer:
         show_results()
